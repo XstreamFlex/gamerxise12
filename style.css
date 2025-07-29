@@ -1,0 +1,62 @@
+```css
+:root {
+    --ps-blue: #0070d1;
+    --xbox-green: #107c10;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+}
+
+.item {
+    flex: 1 1 100%;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background-color: var(--ps-blue);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button.xbox {
+    background-color: var(--xbox-green);
+}
+
+@media (min-width: 768px) {
+    .item {
+        flex: 1 1 48%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .item {
+        flex: 1 1 30%;
+    }
+}
+```
